@@ -1,0 +1,7 @@
+.cell{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000;
+    background-color: inherit;
+    box-sizing: border-box;
+}
