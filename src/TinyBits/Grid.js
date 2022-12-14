@@ -1,5 +1,5 @@
 import Row from './Row';
-import style from './Grid.css';
+import './Grid.css';
 function Grid(props){
   
     
@@ -7,7 +7,7 @@ function Grid(props){
     let nrOfRows = props.spec.height;
     for(let i = 0; i < nrOfRows; i++){
         let key=props.spec.grid+"-row-"+i;
-        rows.push(<Row y={i} x={props.spec.width} grid={props.spec.grid} key={key} />);
+        rows.push(<Row y={i} x={props.spec.width} grid={props.spec.grid} key={key} color={props.color} />);
     }
     return <div className="grid" key={ props.spec.id} id={props.spec.grid+"-wrapper"}>{rows}</div>
 }

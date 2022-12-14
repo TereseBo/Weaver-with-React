@@ -1,11 +1,11 @@
 import Draft from '../LargerBits/Draft';
 import Color from '../TinyBits/Color';
 import { useState } from 'react';
-function DraftPage(){
-    const [currentColor, setCurrentColor] = useState('');
-   
+function DraftPage() {
+  const [currentColor, setCurrentColor] = useState('');
 
-return (
+
+  return (
 
     <div className="DraftPage">
       <header className="DraftPageHeader">
@@ -14,7 +14,9 @@ return (
 
       </header>
       <main>
-        <Draft color={currentColor}/>
+
+          <Draft color={currentColor} />
+
       </main>
     </div>
   );
