@@ -1,18 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Draft from './LargerBits/Draft';
+import DraftPage from './Wiews/DraftPage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-      <main>
-        <Draft />
-      </main>
-    </div>
+  return(
+  <DraftPage/>
   );
+
 }
 
 export default App;
