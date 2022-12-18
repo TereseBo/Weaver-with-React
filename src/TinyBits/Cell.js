@@ -2,12 +2,13 @@
 
 import "./Cell.css";
 
+
 function Cell(props){
     function clickHandler(){
         console.log(props.color);
     }
 
 
-    return <div className="cell" dataset-column={props.x} dataset-row={props.y} dataset-grid={props.grid} onClick={clickHandler}></div>
+    return <div className="cell" data-column={props.x} data-row={props.y} data-grid={props.grid} onClick={props.func}></div>
 }
 export default Cell;
